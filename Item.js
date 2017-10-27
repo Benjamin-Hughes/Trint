@@ -4,5 +4,11 @@ var Item = (function() {
     this.date = new Date(date);
   }
 
+  AItem.prototype = {
+    updateDate: function() {
+      this.date = new Date(Date.now());
+    }
+  }
+
   return AItem;
 })();
