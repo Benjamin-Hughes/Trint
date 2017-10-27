@@ -15,9 +15,10 @@ var Cache = (function() {
 
     get: function(site) {
       for (var i = 0; i < this.items.length; i++) {
-        if (this.items[i].site == site) {
-          // remove item from array and place in last position in the array
-          return this.items[i];
+        if (this.items[i].site === site) {
+          var tmp = this.items.splice(i, 1);
+          this.items.push(tmp[0]);
+          return this.items[this.items.length - 1];
         }
       }
     }
