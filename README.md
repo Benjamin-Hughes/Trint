@@ -35,5 +35,5 @@ myCache.get('foo.com');
 ## Area's for further improvement:
 
 - Better separation of concerns in tests through mocking of date and item objects
-- Have the ```get()``` function create an new item if it doesn't find one in the list
-- Sanitise search input to prevent errors/tampering.
+- Have the ```get()``` function create a new item if it doesn't find one in the list
+- Sanitise search input and ```new item()``` arguments to prevent errors/tampering.
