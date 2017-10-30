@@ -24,6 +24,10 @@ describe('Cache', function() {
     expect(result.site).toEqual('foo.com');
   });
 
+  it('should return a message when no matching items are found', function() {
+    expect(myCache.get('random.com')).toEqual("no items found");
+  })
+
   it('should update the date before returning an item', function() {
     myCache.get("foo.com");
     expect(spy).toHaveBeenCalled();
