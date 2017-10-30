@@ -8,4 +8,8 @@ describe('item', function() {
   it('should store a url upon creation', function() {
     expect(item.site).not.toBe(null);
   })
+
+  it('should store the current date upon creation', function() {
+    expect(this.date).not.toBe(null);
+  })
 })
