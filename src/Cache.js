@@ -22,6 +22,7 @@ var Cache = (function() {
           return this.items[this.items.length - 1];
         }
       }
+      return "no items found"
     }
   }
 
