@@ -14,7 +14,7 @@ var Cache = (function() {
     },
 
     get: function(site) {
-      for (var i = 0; i < this.items.length; i++) {
+      for (var i = 0; i < this.items.length - 1; i++) {
         if (this.items[i].site === site) {
           var tmp = this.items.splice(i, 1);
           tmp[0].updateDate();
